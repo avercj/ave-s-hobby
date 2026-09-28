@@ -50,3 +50,19 @@ nav {
 .nav-links a:hover {
     color: #79d9ff;
 }
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 8%;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(40, 100, 180, 0.35),
+            transparent 30%
+        ),
+        #080b18;
+}
