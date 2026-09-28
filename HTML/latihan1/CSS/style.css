@@ -36,3 +36,17 @@ nav {
     content: "✦";
     color: #79d9ff;
 }
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #79d9ff;
+}
