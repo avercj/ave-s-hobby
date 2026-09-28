@@ -66,3 +66,9 @@ nav {
         ),
         #080b18;
 }
+.small-text {
+    color: #79d9ff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
