@@ -87,3 +87,19 @@ nav {
     color: #aaa;
     font-size: 18px;
 }
+.scroll {
+    margin-top: 50px;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+.scroll:hover {
+    color: #79d9ff;
+    border-color: #79d9ff;
+}
