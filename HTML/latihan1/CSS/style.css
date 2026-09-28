@@ -125,3 +125,13 @@ nav {
 h2 span {
     color: #79d9ff;
 }
+.about-text {
+    max-width: 750px;
+    margin-left: auto;
+}
+
+.about-text p {
+    color: #aaa;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
