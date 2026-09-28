@@ -103,3 +103,14 @@ nav {
     color: #79d9ff;
     border-color: #79d9ff;
 }
+.section,
+.interests {
+    padding: 150px 8%;
+}
+
+.section-number {
+    color: #79d9ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+}
