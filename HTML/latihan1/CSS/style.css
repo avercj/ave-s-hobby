@@ -135,3 +135,41 @@ h2 span {
     font-size: 19px;
     margin-bottom: 30px;
 }
+.interests {
+    background: #0d1124;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.15);
+}
+
+.interest {
+    min-height: 270px;
+    padding: 40px;
+    background: #0d1124;
+    transition: 0.4s;
+}
+
+.interest:hover {
+    background: #151d38;
+    transform: translateY(-5px);
+}
+
+.interest span {
+    color: #79d9ff;
+    font-size: 12px;
+}
+
+.interest h3 {
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+.interest p {
+    color: #888;
+    margin-top: 10px;
+}
+
