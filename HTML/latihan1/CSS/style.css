@@ -72,3 +72,18 @@ nav {
     letter-spacing: 4px;
     margin-bottom: 25px;
 }
+.hero h1 {
+    font-size: clamp(80px, 16vw, 190px);
+    line-height: 0.8;
+    letter-spacing: -8px;
+}
+
+.hero h1 span {
+    color: #79d9ff;
+}
+
+.hero-description {
+    margin-top: 45px;
+    color: #aaa;
+    font-size: 18px;
+}
