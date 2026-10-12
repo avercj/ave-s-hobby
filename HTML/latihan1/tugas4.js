@@ -177,7 +177,9 @@ function buatLangkah4() {
   s.appendChild(btn);
   inMail.focus();
 
-  var pola = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$/;
+ 
+var pola = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$/;
+
 
   btn.onclick = function () {
     var v = inMail.value.trim();
@@ -200,7 +202,7 @@ function buatHasil() {
 
   s.appendChild(el("p", {
     text: "Hallo, nama saya " + nama + ", email saya " + email +
-          " saya mempunyai sejumlah " + jumlah + " pilihan yaitu " + pilihan.join(", ") +
+          " , saya mempunyai sejumlah " + jumlah + " pilihan yaitu " + pilihan.join(", ") +
           ", dan saya memilih " + terpilih
   }));
 
