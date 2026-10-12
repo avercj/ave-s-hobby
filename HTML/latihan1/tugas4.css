@@ -1,0 +1,149 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #fff;
+  --ink: #1d2433;
+  --muted: #5d6678;
+  --line: #d6dbe4;
+  --accent: #1f5fbf;
+  --head: #e8a0bf;
+  --err: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12151c;
+    --card: #1b202b;
+    --ink: #e8ebf2;
+    --muted: #9aa4b8;
+    --line: #333b4d;
+    --accent: #6aa3ff;
+    --head: #0d1d38;
+    --err: #ff8a80;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 system-ui, "Segoe UI", sans-serif;
+}
+
+  header {
+  background: var(--head);
+  color: #666666;
+  padding: 20px 16px;
+
+}
+
+.head-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#foto,
+.head-inner img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;         
+  flex-shrink: 0;              
+  border-radius: 50%;          
+  object-fit: cover;           
+  object-position: center 20%; 
+  border: 3px solid #fff;
+  background: #fff;
+}
+
+.head-inner h1 { margin: 0; font-size: 1.3rem; }
+.head-inner p  { margin: 2px 0 0; opacity: .85; }
+
+
+main {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.step {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  flex-wrap: wrap;
+}
+
+.row > label { min-width: 140px; color: var(--muted); }
+
+.label-pil { color: var(--muted); margin: 8px 0 4px; }
+
+input[type=text],
+input[type=number],
+select {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  min-width: 220px;
+}
+
+input:disabled,
+select:disabled { opacity: .65; }
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button {
+  padding: 8px 22px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #e8a0bf;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled { opacity: .5; cursor: default; }
+
+button.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.error {
+  color: var(--err);
+  min-height: 1.3em;
+  margin: 6px 0 0;
+  font-size: .92rem;
+}
+
+#hasil {
+  font-size: 1.1rem;
+  border-left: 4px solid var(--accent);
+}
